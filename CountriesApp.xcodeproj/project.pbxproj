@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F832D28828A2B4BF003FD712 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832D28728A2B4BF003FD712 /* FavoritesView.swift */; };
 		F88F9931289D4830007272F9 /* CountriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9930289D4830007272F9 /* CountriesApp.swift */; };
 		F88F9933289D4830007272F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9932289D4830007272F9 /* ContentView.swift */; };
 		F88F9935289D4833007272F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88F9934289D4833007272F9 /* Assets.xcassets */; };
@@ -21,9 +22,17 @@
 		F88F9954289D581A007272F9 /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9953289D5819007272F9 /* MainRepository.swift */; };
 		F88F9956289D6202007272F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9955289D6202007272F9 /* HomeView.swift */; };
 		F88F9958289D6258007272F9 /* HomeCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9957289D6258007272F9 /* HomeCountryCell.swift */; };
+		F88F995A289D68CD007272F9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F9959289D68CD007272F9 /* ViewExtensions.swift */; };
+		F8D49B1928A2C85700C8310C /* CountryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D49B1828A2C85700C8310C /* CountryDetailsView.swift */; };
+		F8D49B1C28A2C92A00C8310C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F8D49B1B28A2C92A00C8310C /* Kingfisher */; };
+		F8D49B1E28A2D15800C8310C /* InformationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D49B1D28A2D15800C8310C /* InformationBox.swift */; };
+		F8DA5D5828A2D8070067E239 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8DA5D5728A2D8070067E239 /* SVGKit */; };
+		F8DA5D5A28A2D8070067E239 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F8DA5D5928A2D8070067E239 /* SVGKitSwift */; };
+		F8DA5D6228A2EF860067E239 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA5D6128A2EF860067E239 /* CountryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F832D28728A2B4BF003FD712 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F88F992D289D4830007272F9 /* CountriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88F9930289D4830007272F9 /* CountriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesApp.swift; sourceTree = "<group>"; };
 		F88F9932289D4830007272F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +47,10 @@
 		F88F9953289D5819007272F9 /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
 		F88F9955289D6202007272F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F88F9957289D6258007272F9 /* HomeCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCountryCell.swift; sourceTree = "<group>"; };
+		F88F9959289D68CD007272F9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		F8D49B1828A2C85700C8310C /* CountryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsView.swift; sourceTree = "<group>"; };
+		F8D49B1D28A2D15800C8310C /* InformationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationBox.swift; sourceTree = "<group>"; };
+		F8DA5D6128A2EF860067E239 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DA5D5A28A2D8070067E239 /* SVGKitSwift in Frameworks */,
+				F8DA5D5828A2D8070067E239 /* SVGKit in Frameworks */,
+				F8D49B1C28A2C92A00C8310C /* Kingfisher in Frameworks */,
 				F88F9951289D5290007272F9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,13 +87,13 @@
 		F88F992F289D4830007272F9 /* CountriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				F88F9934289D4833007272F9 /* Assets.xcassets */,
 				F88F9930289D4830007272F9 /* CountriesApp.swift */,
 				F88F9952289D52AB007272F9 /* View */,
 				F88F9941289D4945007272F9 /* Utilities */,
 				F88F9940289D48B9007272F9 /* Network */,
 				F88F993F289D48B3007272F9 /* Model */,
 				F88F993E289D48AA007272F9 /* Repository */,
-				F88F9934289D4833007272F9 /* Assets.xcassets */,
 				F88F9936289D4833007272F9 /* Preview Content */,
 			);
 			path = CountriesApp;
@@ -121,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				F88F9942289D4954007272F9 /* Constants.swift */,
+				F88F9959289D68CD007272F9 /* ViewExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -138,10 +155,38 @@
 			isa = PBXGroup;
 			children = (
 				F88F9932289D4830007272F9 /* ContentView.swift */,
+				F832D28728A2B4BF003FD712 /* FavoritesView.swift */,
+				F8DA5D6028A2EF7C0067E239 /* Common */,
+				F8DA5D5C28A2EB8C0067E239 /* Home */,
+				F8DA5D5B28A2EB830067E239 /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8DA5D5B28A2EB830067E239 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F8D49B1828A2C85700C8310C /* CountryDetailsView.swift */,
+				F8D49B1D28A2D15800C8310C /* InformationBox.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F8DA5D5C28A2EB8C0067E239 /* Home */ = {
+			isa = PBXGroup;
+			children = (
 				F88F9955289D6202007272F9 /* HomeView.swift */,
 				F88F9957289D6258007272F9 /* HomeCountryCell.swift */,
 			);
-			path = View;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8DA5D6028A2EF7C0067E239 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA5D6128A2EF860067E239 /* CountryListView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +207,9 @@
 			name = CountriesApp;
 			packageProductDependencies = (
 				F88F9950289D5290007272F9 /* Alamofire */,
+				F8D49B1B28A2C92A00C8310C /* Kingfisher */,
+				F8DA5D5728A2D8070067E239 /* SVGKit */,
+				F8DA5D5928A2D8070067E239 /* SVGKitSwift */,
 			);
 			productName = CountriesApp;
 			productReference = F88F992D289D4830007272F9 /* CountriesApp.app */;
@@ -193,6 +241,8 @@
 			mainGroup = F88F9924289D4830007272F9;
 			packageReferences = (
 				F88F994F289D5290007272F9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8D49B1A28A2C92900C8310C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F8DA5D5628A2D8070067E239 /* XCRemoteSwiftPackageReference "SVGKit" */,
 			);
 			productRefGroup = F88F992E289D4830007272F9 /* Products */;
 			projectDirPath = "";
@@ -220,16 +270,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D49B1928A2C85700C8310C /* CountryDetailsView.swift in Sources */,
 				F88F9933289D4830007272F9 /* ContentView.swift in Sources */,
 				F88F9931289D4830007272F9 /* CountriesApp.swift in Sources */,
 				F88F994E289D51D8007272F9 /* NetworkService.swift in Sources */,
 				F88F9956289D6202007272F9 /* HomeView.swift in Sources */,
+				F832D28828A2B4BF003FD712 /* FavoritesView.swift in Sources */,
 				F88F994C289D50F8007272F9 /* CountryDetailModel.swift in Sources */,
 				F88F9945289D4C87007272F9 /* CountryModel.swift in Sources */,
 				F88F9943289D4954007272F9 /* Constants.swift in Sources */,
 				F88F9954289D581A007272F9 /* MainRepository.swift in Sources */,
 				F88F994A289D4F58007272F9 /* CountryDetailDao.swift in Sources */,
+				F8DA5D6228A2EF860067E239 /* CountryListView.swift in Sources */,
 				F88F9958289D6258007272F9 /* HomeCountryCell.swift in Sources */,
+				F88F995A289D68CD007272F9 /* ViewExtensions.swift in Sources */,
+				F8D49B1E28A2D15800C8310C /* InformationBox.swift in Sources */,
 				F88F9947289D4CB1007272F9 /* CountryDao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +496,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F8D49B1A28A2C92900C8310C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		F8DA5D5628A2D8070067E239 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -448,6 +519,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F88F994F289D5290007272F9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F8D49B1B28A2C92A00C8310C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8D49B1A28A2C92900C8310C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F8DA5D5728A2D8070067E239 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8DA5D5628A2D8070067E239 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		F8DA5D5928A2D8070067E239 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8DA5D5628A2D8070067E239 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

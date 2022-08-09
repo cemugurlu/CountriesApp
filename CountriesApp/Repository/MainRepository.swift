@@ -13,9 +13,9 @@ class MainRepository: ObservableObject {
     
     private init() {}
     
-    func fetchCountries(completion: @escaping() -> Void) {
+    func fetchCountries() {
         NetworkService.fetchCountries { response in
-            guard let model = response else { return completion() }
+            guard let model = response else { return }
             self.countries = model.data.map(CountryModel.init)
         }
     }
@@ -25,6 +25,16 @@ class MainRepository: ObservableObject {
             guard let model = response else { return completion(nil)}
             completion(.init(dao: model.data))
             
+        }
+    }
+    
+    func toggleFavorite(country: CountryModel) {
+        countries = countries.map {
+            var newCountry = $0
+            if newCountry.id == country.id {
+                newCountry.isFavorite.toggle()
+            }
+            return newCountry
         }
     }
     

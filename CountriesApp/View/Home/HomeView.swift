@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject private var mainRepository = MainRepository.shared
+    
     var body: some View {
         NavigationView {
-            VStack {
-                HomeCountryCell(country: .previewData)
-            }
+            CountryListView(countries: mainRepository.countries)
+                .navigationTitle("Countries")
+                .navigationBarTitleDisplayMode(.inline)
+            
         }
+        
     }
 }
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
+

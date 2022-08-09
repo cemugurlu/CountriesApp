@@ -7,14 +7,18 @@
 
 import Foundation
 
-struct CountryModel {
+struct CountryModel: Identifiable {
+    let id = UUID()
     var code: String
     var name: String
+    var isFavorite: Bool
 
     static var previewData: CountryModel {
         return .init(
-            code: "US",
-            name: "Great United States of America"
+            code: "SW",
+            name: "Sweden",
+            isFavorite: false
+            
         )
     }
 }
@@ -23,5 +27,6 @@ extension CountryModel {
     init(dao: CountryDatumDao) {
         code = dao.code
         name = dao.name
+        isFavorite = false
     }
 }
